@@ -1,0 +1,47 @@
+{
+  "name": "@leo/hello-fastify",
+  "version": "0.0.0",
+  "description": "example for fastify",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node lib/http | pino-pretty -c -t",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leo721120/hello-fastify.git"
+  },
+  "author": "leojan@alum.ccu.edu.tw",
+  "license": "LICENSED",
+  "bugs": {
+    "url": "https://github.com/leo721120/hello-fastify/issues"
+  },
+  "homepage": "https://github.com/leo721120/hello-fastify#readme",
+  "dependencies": {
+    "fastify": "^2.11.0",
+    "pino": "^5.15.0",
+    "pino-pretty": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.4",
+    "@types/pino": "^5.15.1",
+    "jest": "^24.9.0",
+    "typescript": "^3.7.4"
+  },
+  "jest": {
+    "browser": false,
+    "testMatch": [
+      "**/test/**/*.[j]s?(x)"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 60,
+        "statements": 50
+      }
+    }
+  }
+}
