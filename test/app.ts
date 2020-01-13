@@ -11,5 +11,7 @@ describe('GET /', function() {
             method: 'GET',
         });
         expect(res.statusCode).toBe(200);
+        expect(res.headers).toHaveProperty('x-ratelimit-limit');
+        expect(res.headers).toHaveProperty('x-xss-protection');
     });
 });

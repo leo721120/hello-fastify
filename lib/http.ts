@@ -1,7 +1,7 @@
 import app from './app'
 
 app.listen({
-    port: parseInt(process.env.PORT as string),
+    port: process.env.PORT ? parseInt(process.env.PORT as string) : undefined,
 }).then(function () {
     //
 }).catch(function (e) {
